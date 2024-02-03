@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popUpContainer">
+      <!-- <form class="editPopUp">
+        <div class="editPopUpHeader">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+            id="exitEdit"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </div>
+        <div class="editPopUpBody">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title:"
+            class="inputClass"
+          />
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Description:"
+            class="inputClass"
+          ></textarea>
+        </div>
+        <div class="editPopUpBottomBar">
+          <div class="bottomBarFormat1">
+            <p>Due Date:</p>
+            <input type="date" name="dueDate" id="dueDate" />
+          </div>
+          <div class="bottomBarFormat2">
+            <div class="bottomBarFormat1">
+              <p>Priority:</p>
+              <button class="low">Low</button>
+              <button class="medium">Medium</button>
+              <button class="high">High</button>
+            </div>
+            <button class="addItem">Submit</button>
+          </div>
+        </div>
+      </form> -->
+      <!-- <div class="detailsPopUp">
+        <div class="detailsXContainer">
+          <p class="detailsTitle">Example Task</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+            id="detailsX"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </div>
+        <p>Project: <span class="detailsProject">Los Angeles</span></p>
+        <p>Priority: <span class="detailsPriority">Low</span></p>
+        <p>Due Date: <span class="detailsTime">12/01/24 @ 5:53 pm</span></p>
+        <p>Details: <span class="detailsBody">This can be anything</span></p>
+      </div> -->
+      <form class="popUp">
+        <div class="popUpHeader">
+          <p>Menu</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+            id="exitPopUp"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </div>
+        <div class="popUpSide">
+          <button class="listItem addList">+ Add List</button>
+          <button class="listItem addListTasks">+ Add List Tasks</button>
+          <button class="listItem addNote">+ Add a Note</button>
+        </div>
+        <div class="popUpBody">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title:"
+            class="inputClass"
+          />
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Description:"
+            class="inputClass textAreaDescription"
+          ></textarea>
+        </div>
+        <div class="popUpBottomBar">
+          <div class="bottomBarFormat1">
+            <p>Due Date:</p>
+            <input type="date" name="dueDate" id="dueDate" />
+          </div>
+          <div class="bottomBarFormat2">
+            <div class="bottomBarFormat1">
+              <p>Priority:</p>
+
+              <button type="button" class="low">Low</button>
+              <button type="button" class="medium">Medium</button>
+              <button type="button" class="high">High</button>
+            </div>
+            <button class="addItem submitList">Submit</button>
+            <button class="addItem submitTask">Submit</button>
+            <button class="addItem submitNote">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div id="container">
+        <div class="header"><h1>To-Do List</h1></div>
+        <div class="myLists">
+          <h1>My Lists</h1>
+          <div class="list">
+            <button class="addBtn">+ Add</button>
+            <button class="deleteBtn">- Delete</button>
+            <button class="notesBtn">Notes</button>
+            <!-- <div class="listContainer">
+              <button class="listItem itemOutline sideList">
+                <div class="itemName">Los Angeles</div>
+                <div class="itemNum">1</div>
+              </button>
+              <button class="listItem sideList">
+                <div class="itemName">Hawaii</div>
+                <div class="itemNum">12</div>
+              </button>
+            </div> -->
+          </div>
+        </div>
+        <div class="body">
+          <!-- <div class="task">
+            <div class="taskBox1">
+              <input type="checkbox" name="checkMe" id="checkMe" />
+              <span class="checkmark"></span>
+              <p>example task here</p>
+            </div>
+            <div class="taskBox2">
+              <button class="detailsButton">Details</button>
+              <p class="datePreview">12/01/2023 @ 8:53 AM</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#5c5f6d"
+                class="bi bi-pencil-square"
+                viewBox="0 0 16 16"
+                id="taskSVG"
+              >
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#5c5f6d"
+                class="bi bi-trash-fill"
+                viewBox="0 0 16 16"
+                id="taskSVG"
+              >
+                <path
+                  d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"
+                />
+              </svg>
+            </div>
+          </div> -->
+          <!-- <div class="notesContainer">
+            <div class="note">
+              <div class="noteHeader">
+                <p class="noteTitle">Title</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                  id="exitNote"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                  />
+                </svg>
+              </div>
+              <p class="noteBody">Description lorem ipsum dlkjfdsklfjs</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
